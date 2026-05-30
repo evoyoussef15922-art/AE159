@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AE159 Collective</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#000;
+    color:#fff;
+    font-family:Montserrat,sans-serif;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 5%;
+    background:#000;
+    border-bottom:1px solid #222;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo{
+    font-family:Cinzel;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+    flex-wrap: wrap;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+    font-size: 14px;
+}
+
+nav a:hover{
+    color:#aaa;
+}
+
+.hero{
+    height:90vh;
+    background:url("banner.jpg") center center/cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding: 20px;
+}
+
+.hero-content h1{
+    font-family:Cinzel;
+    font-size: clamp(32px, 5vw, 70px); /* حجم خط مرن يتناسب مع كل الشاشات */
+    max-width:900px;
+    margin-bottom:30px;
+    line-height: 1.3;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 40px;
+    border:2px solid #fff;
+    color:#fff;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#fff;
+    color:#000;
+}
+
+.section-title{
+    text-align:center;
+    font-family:Cinzel;
+    font-size: clamp(28px, 4vw, 42px);
+    margin:60px 0 30px;
+}
+
+.products{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#111;
+    border-radius:10px;
+    overflow:hidden;
+    border:1px solid #222;
+}
+
+.card img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.price{
+    margin-bottom:15px;
+    font-size:20px;
+}
+
+.shop-btn{
+    display:inline-block;
+    padding:10px 20px;
+    border:1px solid #fff;
+    text-decoration:none;
+    color:#fff;
+    transition: 0.3s;
+}
+
+.shop-btn:hover{
+    background: #fff;
+    color: #000;
+}
+
+.about{
+    width:80%;
+    margin:80px auto;
+    text-align:center;
+}
+
+.about h2{
+    font-family:Cinzel;
+    margin-bottom:20px;
+}
+
+.about p{
+    color:#ccc;
+    line-height:1.8;
+}
+
+footer{
+    margin-top:80px;
+    background:#111;
+    padding:50px 8%;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:30px;
+}
+
+footer h3{
+    margin-bottom:15px;
+}
+
+footer a{
+    display:block;
+    color:#ccc;
+    text-decoration:none;
+    margin-bottom:10px;
+}
+
+footer a:hover{
+    color:white;
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">AE159 COLLECTIVE</div>
+<nav>
+<ul>
+<li><a href="#">HOME</a></li>
+<li><a href="#">NEW DROPS</a></li>
+<li><a href="#">ESSENTIALS</a></li>
+<li><a href="#">ABOUT</a></li>
+<li><a href="#">CONTACT</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero">
+<div class="hero-content">
+<h1>EMBRACE THE BALANCE.<br>FIRST DROP: NOW LIVE.</h1>
+<a href="#drops" class="btn">SHOP NOW</a>
+</div>
+</section>
+
+<h2 class="section-title" id="drops">THE DROPS</h2>
+
+<section class="products">
+<div class="card">
+<img src="shirt1.jpg" alt="GT3 RS TEE">
+<div class="card-content">
+<h3>GT3 RS TEE</h3>
+<div class="price">600 EGP</div>
+<a href="#" class="shop-btn">QUICK SHOP</a>
+</div>
+</div>
+
+<div class="card">
+<img src="shirt2.jpg" alt="DISCIPLINE TEE">
+<div class="card-content">
+<h3>DISCIPLINE TEE</h3>
+<div class="price">600 EGP</div>
+<a href="#" class="shop-btn">QUICK SHOP</a>
+</div>
+</div>
+</section>
+
+<h2 class="section-title">THE ESSENTIALS</h2>
+
+<section class="products">
+<div class="card">
+<img src="shirt3.jpg" alt="BALANCE TEE">
+<div class="card-content">
+<h3>BALANCE TEE</h3>
+<div class="price">550 EGP</div>
+<a href="#" class="shop-btn">QUICK SHOP</a>
+</div>
+</div>
+
+<div class="card">
+<img src="shirt4.jpg" alt="PREMIUM TEE">
+<div class="card-content">
+<h3>PREMIUM TEE</h3>
+<div class="price">550 EGP</div>
+<a href="#" class="shop-btn">QUICK SHOP</a>
+</div>
+</div>
+
+<div class="card">
+<img src="shirt5.jpg" alt="ESSENTIAL TEE">
+<div class="card-content">
+<h3>ESSENTIAL TEE</h3>
+<div class="price">550 EGP</div>
+<a href="#" class="shop-btn">QUICK SHOP</a>
+</div>
+</div>
+</section>
+
+<section class="about">
+<h2>OUR CODE</h2>
+<p>
+AE159 Collective is built around premium quality,
+minimal design and powerful identity.
+Every piece is created to deliver comfort,
+style and confidence.
+</p>
+</section>
+
+<footer>
+<div class="footer-grid">
+<div>
+<h3>CUSTOMER SERVICE</h3>
+<a href="#">Shipping</a>
+<a href="#">Returns</a>
+<a href="#">Contact</a>
+</div>
+<div>
+<h3>FOLLOW US</h3>
+<a href="#">Instagram</a>
+<a href="#">Facebook</a>
+<a href="#">TikTok</a>
+</div>
+<div>
+<h3>POLICIES</h3>
+<a href="#">Terms</a>
+<a href="#">Privacy</a>
+</div>
+</div>
+</footer>
+
+</body>
+</html>
